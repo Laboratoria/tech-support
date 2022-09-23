@@ -124,34 +124,85 @@ class TechSupport extends HTMLElement {
 
     shadow.innerHTML = `
       <style>
-      a { text-decoration: none; font-family: Open Sans, sans-serif; }
-      .menu { display: none; }
+      a {
+        text-decoration: none;
+        font-family: Open Sans, sans-serif;
+      }
+      .menu {
+        background-color: rgba(0, 0, 0, 0.7);
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: -5px;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        z-index: 999;
+      }
+      .menu ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+      }
+      .menu li {
+        margin: 0;
+        padding: 0;
+      }
+      .menu a {
+        display: block;
+        margin: 0.3rem;
+        padding: 0.6rem 1.2rem;
+        color: #fff;
+      }
+      .menu ul a {
+        background-color: #000;
+        border-radius: 0.4rem;
+      }
       </style>
       <a class="toggle" href="#" title="Tech support">🛟</a>
-      <ul class="menu">
-        <li>
-          <a href="${bugURL}" target="_blank">
-            ${__('bugReport')}
-          </a>
-        </li>
-        <li>
-          <a href="${featureURL}" target="_blank">
-            ${__('featureRequest')}
-          </a>
-        </li>
-        <li>
-          <a href="${otherURL}" target="_blank">
-            ${__('questionAsk')}
-          </a>
-        </li>
-      </ul>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="${bugURL}" target="_blank">
+              ${__('bugReport')}
+            </a>
+          </li>
+          <li>
+            <a href="${featureURL}" target="_blank">
+              ${__('featureRequest')}
+            </a>
+          </li>
+          <li>
+            <a href="${otherURL}" target="_blank">
+              ${__('questionAsk')}
+            </a>
+          </li>
+        </ul>
+        <a class="close-btn" href="#">✖️ Cerrar</a>
+      </div>
     `;
 
     const toggleEl = shadow.querySelector('.toggle');
     const menuEl = shadow.querySelector('.menu');
+    const closeBtnEl = shadow.querySelector('.close-btn');
 
-    toggleEl.addEventListener('click', () => {
-      menuEl.style.display = menuEl.style.display === 'block' ? 'none' : 'block';
+    toggleEl.addEventListener('click', (event) => {
+      event.preventDefault();
+      menuEl.style.display = menuEl.style.display === 'flex' ? 'none' : 'flex';
+    });
+
+    closeBtnEl.addEventListener('click', (event) => {
+      event.preventDefault();
+      menuEl.style.display = 'none';
     });
   }
 }
