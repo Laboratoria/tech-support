@@ -4,6 +4,7 @@ about: Reporta un problema que hayas identificado para ayudarnos a mejorar
 title: "[Bug] Reemplaza este texto con el título"
 labels: bug
 assignees: ''
+lang: es
 
 ---
 
