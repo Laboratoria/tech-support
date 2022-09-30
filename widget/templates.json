@@ -1,0 +1,42 @@
+[
+  {
+    "fname": "bug_report.es.md",
+    "id": "bug_report",
+    "lang": "es",
+    "headers": {
+      "name": "Reporta un problema",
+      "about": "Reporta un problema que hayas identificado para ayudarnos a mejorar",
+      "title": "[Bug] Reemplaza este texto con el título",
+      "labels": "bug",
+      "assignees": "",
+      "lang": "es"
+    },
+    "body": "**Describe el problema**\nDescripción clara y concisa de cuál es el problema.\n\n**Para reproducirlo**\nPasos para reproducir el problema:\n1. Ir a '...'\n2. Hacer click en '....'\n3. Hacer scroll hacia abajo hasta '....'\n4. Ver error\n\n**Comportamiento esperado**\nDescripción clara y concisa de qué esperabas que ocurriera.\n\n**Screenshots**\nSi es posible, agrega screenshots (capturas de pantalla) para ayudar a entender\nel problema.\n\n**Contexto adicional**\nAgrega cualquier otra cosa que pueda ayudar a entender el contexto en el que\nocurre el problema."
+  },
+  {
+    "fname": "feature_request.es.md",
+    "id": "feature_request",
+    "lang": "es",
+    "headers": {
+      "name": "Sugiere una mejora",
+      "about": "Propón una idea de mejora que te gustaría ver",
+      "title": "[Mejora] Reemplaza este texto con el título",
+      "labels": "enhancement",
+      "assignees": ""
+    },
+    "body": "**La mejora que quieres proponer hace relación a un problema?**\nDescripción clara y concisa de cuál es el problema. Por ejemplo, siempre me\nfrustro cuando [...]\n\n**Describe la solución que te gustaría**\nDescripción clara y concisa de qué te gustaría que ocurra.\n\n**¿Qué alternativas has considerado?**\nDescripción clara y concisa de otras solucioines alternativas que hayas\nconsiderado.\n\n**Contexto adicional**\nAgrega cualquier otra cosa que pueda ayudar a entender el contexto en el que\nocurre el problema."
+  },
+  {
+    "fname": "question.es.md",
+    "id": "question",
+    "lang": "es",
+    "headers": {
+      "name": "Haz una pregunta",
+      "about": "¿Tienes alguna duda o comentario?",
+      "title": "[Pregunta] Reemplaza este texto con el título",
+      "labels": "question",
+      "assignees": ""
+    },
+    "body": "En este espacio puedes agregar el contexto necesario: texto, screenshots, etc."
+  }
+]
