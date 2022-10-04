@@ -8,8 +8,7 @@ assignees: ''
 ---
 
 **A melhoria que você deseja propor está relacionada a um problema?**
-Descrição clara e concisa de qual é o problema. Por exemplo, eu sempre
-Eu fico frustrado quando [...]
+Descrição clara e concisa de qual é o problema. Por exemplo, Eu fico frustrado quando [...]
 
 **Descreva a solução desejada**
 Descrição clara e concisa do que você gostaria de ver acontecer.
