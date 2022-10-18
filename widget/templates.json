@@ -11,7 +11,21 @@
       "assignees": "",
       "lang": "es"
     },
-    "body": "**Describe el problema**\nDescripción clara y concisa de cuál es el problema.\n\n**Para reproducirlo**\nPasos para reproducir el problema:\n1. Ir a '...'\n2. Hacer click en '....'\n3. Hacer scroll hacia abajo hasta '....'\n4. Ver error\n\n**Comportamiento esperado**\nDescripción clara y concisa de qué esperabas que ocurriera.\n\n**Screenshots**\nSi es posible, agrega screenshots (capturas de pantalla) para ayudar a entender\nel problema.\n\n**Contexto adicional**\nAgrega cualquier otra cosa que pueda ayudar a entender el contexto en el que\nocurre el problema."
+    "body": "**Describe el problema**\nDescripción clara y concisa de cuál es el problema.\n\n**Para reproducirlo**\nPasos para reproducir el problema:\n1. Ir a '...'\n2. Hacer click en '....'\n3. Hacer scroll hacia abajo hasta '....'\n4. Ver error\n\n**Comportamiento esperado**\nDescripción clara y concisa de qué esperabas que ocurriera.\n\n**Screenshots**\nSi es posible, agrega screenshots (capturas de pantalla) para ayudar a entender\nel problema.\n\n**Contexto adicional**\nAgrega cualquier otra cosa que pueda ayudar a entender el contexto en el que\nocurre el problema.\n\n**Alerta**\nRecuerda que este repositorio es público, todos los issues y conversaciones \nrelacionadas son públicas y visibles a todo el mundo.\nSi necesitas compartirnos información de forma privada, NO lo hagas a través de este repo, \nnos pondremos en contacto para poder dar soporte a través de un canal privado."
+  },
+  {
+    "fname": "bug_report.pt.md",
+    "id": "bug_report",
+    "lang": "pt",
+    "headers": {
+      "name": "Reportar um problema",
+      "about": "Informe um problema que você identificou para nos ajudar a melhorar",
+      "title": "[Bug] Substitua este texto pelo título",
+      "labels": "bug",
+      "assignees": "",
+      "lang": "es"
+    },
+    "body": "**Descreva o problema**\nDescrição clara e concisa de qual é o problema.\n\n**Para jogar**\nEtapas para reproduzir o problema:\n1. Vá para '...'\n2. Clique em '....'\n3. Role para baixo até '....'\n4. Veja o erro\n\n**Comportamento esperado**\nDescrição clara e concisa do que você esperava que acontecesse.\n\n**Screenshots**\nSe possível, adicione capturas de tela para ajudar a entender\no problema.\n\n**Contexto adicional**\nAdicione qualquer outra coisa que possa ajudar a entender o contexto em que\no problema ocorre.\n\n**Alerta**\nLembre-se que este repositório é público, todos os problemas e conversas\nrelacionados são públicos e visíveis para todos.\nSe você precisar compartilhar informações conosco em particular, NÃO faça isso por meio deste repositório,\nEntraremos em contato com você para poder fornecer suporte por meio de um canal privado."
   },
   {
     "fname": "feature_request.es.md",
@@ -24,7 +38,20 @@
       "labels": "enhancement",
       "assignees": ""
     },
-    "body": "**La mejora que quieres proponer hace relación a un problema?**\nDescripción clara y concisa de cuál es el problema. Por ejemplo, siempre me\nfrustro cuando [...]\n\n**Describe la solución que te gustaría**\nDescripción clara y concisa de qué te gustaría que ocurra.\n\n**¿Qué alternativas has considerado?**\nDescripción clara y concisa de otras solucioines alternativas que hayas\nconsiderado.\n\n**Contexto adicional**\nAgrega cualquier otra cosa que pueda ayudar a entender el contexto en el que\nocurre el problema."
+    "body": "**La mejora que quieres proponer hace relación a un problema?**\nDescripción clara y concisa de cuál es el problema. Por ejemplo, siempre me\nfrustro cuando [...]\n\n**Describe la solución que te gustaría**\nDescripción clara y concisa de qué te gustaría que ocurra.\n\n**¿Qué alternativas has considerado?**\nDescripción clara y concisa de otras soluciones alternativas que hayas\nconsiderado.\n\n**Contexto adicional**\nAgrega cualquier otra cosa que pueda ayudar a entender el contexto en el que\nocurre el problema.\n\n**Alerta**\nRecuerda que este repositorio es público, todos los issues y conversaciones \nrelacionadas son públicas y visibles a todo el mundo.\nSi necesitas compartirnos información de forma privada, NO lo hagas a través de este repo, \nnos pondremos en contacto para poder dar soporte a través de un canal privado."
+  },
+  {
+    "fname": "feature_request.pt.md",
+    "id": "feature_request",
+    "lang": "pt",
+    "headers": {
+      "name": "Sugerir uma melhoria",
+      "about": "Proponha uma ideia de melhoria que você gostaria de ver",
+      "title": "[Melhoria] Substitua este texto pelo título",
+      "labels": "enhancement",
+      "assignees": ""
+    },
+    "body": "**A melhoria que você deseja propor está relacionada a um problema?**\nDescrição clara e concisa de qual é o problema. Por exemplo, Eu fico frustrado quando [...]\n\n**Descreva a solução desejada**\nDescrição clara e concisa do que você gostaria de ver acontecer.\n\n**Quais alternativas você considerou?**\nDescrição clara e concisa de outras soluções alternativas que você tem\nconsiderado.\n\n**Contexto adicional**\nAdicione qualquer outra coisa que possa ajudar a entender o contexto em que\no problema ocorre.\n\n**Alerta**\nLembre-se que este repositório é público, todos os problemas e conversas\nrelacionados são públicos e visíveis para todos.\nSe você precisar compartilhar informações conosco em particular, NÃO faça isso por meio deste repositório,\nEntraremos em contato com você para poder fornecer suporte por meio de um canal privado."
   },
   {
     "fname": "question.es.md",
@@ -37,6 +64,19 @@
       "labels": "question",
       "assignees": ""
     },
-    "body": "En este espacio puedes agregar el contexto necesario: texto, screenshots, etc."
+    "body": "En este espacio puedes agregar el contexto necesario: texto, screenshots, etc.\n\n**Alerta**\nRecuerda que este repositorio es público, todos los issues y conversaciones \nrelacionadas son públicas y visibles a todo el mundo.\nSi necesitas compartirnos información de forma privada, NO lo hagas a través de este repo, \nnos pondremos en contacto para poder dar soporte a través de un canal privado."
+  },
+  {
+    "fname": "question.pt.md",
+    "id": "question",
+    "lang": "pt",
+    "headers": {
+      "name": "Faça uma pergunta",
+      "about": "Você tem alguma pergunta ou comentário?",
+      "title": "[Question] Substitua este texto pelo título",
+      "labels": "question",
+      "assignees": ""
+    },
+    "body": "Neste espaço você pode adicionar o contexto necessário: texto, screenshots, etc.\n\n**Alerta**\nLembre-se que este repositório é público, todos os problemas e conversas\nrelacionados são públicos e visíveis para todos.\nSe você precisar compartilhar informações conosco em particular, NÃO faça isso por meio deste repositório,\nEntraremos em contato com você para poder fornecer suporte por meio de um canal privado."
   }
 ]
