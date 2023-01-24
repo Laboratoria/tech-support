@@ -88,66 +88,64 @@ class TechSupport extends HTMLElement {
         font-family: Open Sans, sans-serif;
       }
       .menu {
-        background-color: rgba(0, 0, 0, 0.7);
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: #f2f2f2;
+        border-radius: 0.4rem;
         display: none;
         position: absolute;
-        width: 100%;
-        height: 100vh;
-        left: 0;
-        top: -5px;
-        margin: 0;
-        padding: 0;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        list-style: none;
+        right: 23px;
+        top: 60px;
         z-index: 999;
-      }
-      .menu ul {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        list-style: none;
       }
       .menu li {
         margin: 0;
-        padding: 0;
+        padding: 0.5rem 1.65rem;
+      }
+      .menu li:first-child {
+        border-radius: 0.25rem 0.25rem 0 0;
+      }
+      .menu li:last-child {
+        border-radius: 0 0 0.25rem 0.25rem;
+      }
+      .menu li:hover {
+        background-color: #FB5EBF;
       }
       .menu a {
         display: block;
-        margin: 0.3rem;
+        margin: 0;
         padding: 0.6rem 1.2rem;
-        color: #fff;
+        color: #000;
+        font-weight: 600;
       }
       .menu ul a {
         background-color: #000;
-        border-radius: 0.4rem;
       }
       </style>
-      <a class="open-btn" href="#" title="${__('techSupport')}">🛟</a>
-      <div class="menu">
-        <ul>
-          ${listItems}
-        </ul>
-        <a class="close-btn" href="#">✖️ ${__('close')}</a>
-      </div>
+      <a class="open-btn" href="#" title="${__('techSupport')}">
+        <svg
+          width="32"
+          height="32"
+          focusable="false"
+          aria-hidden="true"
+          viewBox="0 0 24 24"
+        >
+            <path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z">
+            </path>
+        </svg>
+      </a>
+      <ul class="menu">
+        ${listItems}
+      </ul>
     `;
 
     const openBtnEl = shadow.querySelector('.open-btn');
-    const closeBtnEl = shadow.querySelector('.close-btn');
     const menuEl = shadow.querySelector('.menu');
 
     openBtnEl.addEventListener('click', (event) => {
       event.preventDefault();
-      menuEl.style.display = menuEl.style.display === 'flex' ? 'none' : 'flex';
-    });
-
-    closeBtnEl.addEventListener('click', (event) => {
-      event.preventDefault();
-      menuEl.style.display = 'none';
+      menuEl.style.display = menuEl.style.display === 'block' ? 'none' : 'block';
     });
   }
 }

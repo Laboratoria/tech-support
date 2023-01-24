@@ -1,4 +1,4 @@
-(function(i){typeof define=="function"&&define.amd?define(i):i()})(function(){"use strict";const i=[{fname:"bug_report.es.md",id:"bug_report",lang:"es",headers:{name:"Reporta un problema",about:"Reporta un problema que hayas identificado para ayudarnos a mejorar",title:"[Bug] Reemplaza este texto con el t\xEDtulo",labels:"bug",assignees:"",lang:"es"},body:`**Describe el problema**
+(function(t){typeof define=="function"&&define.amd?define(t):t()})(function(){"use strict";const t=[{fname:"bug_report.es.md",id:"bug_report",lang:"es",headers:{name:"Reporta un problema",about:"Reporta un problema que hayas identificado para ayudarnos a mejorar",title:"[Bug] Reemplaza este texto con el t\xEDtulo",labels:"bug",assignees:"",lang:"es"},body:`**Describe el problema**
 Descripci\xF3n clara y concisa de cu\xE1l es el problema.
 
 **Para reproducirlo**
@@ -97,7 +97,7 @@ nos pondremos en contacto para poder dar soporte a trav\xE9s de un canal privado
 Lembre-se que este reposit\xF3rio \xE9 p\xFAblico, todos os problemas e conversas
 relacionados s\xE3o p\xFAblicos e vis\xEDveis para todos.
 Se voc\xEA precisar compartilhar informa\xE7\xF5es conosco em particular, N\xC3O fa\xE7a isso por meio deste reposit\xF3rio,
-Entraremos em contato com voc\xEA para poder fornecer suporte por meio de um canal privado.`}],b={es:{techSupport:"Tech support",close:"Cerrar"},pt:{techSupport:"Tech support",close:"Fechar"}},g=r=>n=>b[r][n]||n,v=r=>`
+Entraremos em contato com voc\xEA para poder fornecer suporte por meio de um canal privado.`}],m={es:{techSupport:"Tech support",close:"Cerrar"},pt:{techSupport:"Tech support",close:"Fechar"}},b=o=>r=>m[o][r]||r,g=o=>`
 
 ***
 
@@ -106,64 +106,68 @@ Entraremos em contato com voc\xEA para poder fornecer suporte por meio de um can
 **Location**: \`${window.location}\`
 **User Agent**: \`${navigator.userAgent}\`
 **Navigator Language**: \`${navigator.language}\`
-**Selected Language**: \`${r}\`
-`,f=(r,n)=>({title:e,body:p,labels:t,assignees:c,template:a})=>{const l={...!!e&&{title:e},...!!t&&{labels:t},...!!c&&{assignees:c},...!!a&&{template:a},body:`${p}${v(n)}`},d=Object.keys(l).reduce((u,s)=>`${u?`${u}&`:""}${s}=${encodeURIComponent(`${l[s]}`)}`,"");return`https://github.com/${r}/issues/new?${d}`};class h extends HTMLElement{constructor(){super()}connectedCallback(){const n=this.getAttribute("repo")||"Laboratoria/tech-support",e=this.getAttribute("lang")||"es";if(!["es","pt"].includes(e))return alert(`[TechSupport] Unsupported lang: ${e}`);const p=i.filter(o=>o.lang===e),t=g(e),c=f(n,e),a=this.attachShadow({mode:"open"}),l=p.reduce((o,m)=>{const q=c({...m.headers,body:m.body});return`${o}
+**Selected Language**: \`${o}\`
+`,h=(o,r)=>({title:e,body:u,labels:i,assignees:c,template:n})=>{const l={...!!e&&{title:e},...!!i&&{labels:i},...!!c&&{assignees:c},...!!n&&{template:n},body:`${u}${g(r)}`},p=Object.keys(l).reduce((s,a)=>`${s?`${s}&`:""}${a}=${encodeURIComponent(`${l[a]}`)}`,"");return`https://github.com/${o}/issues/new?${p}`};class v extends HTMLElement{constructor(){super()}connectedCallback(){const r=this.getAttribute("repo")||"Laboratoria/tech-support",e=this.getAttribute("lang")||"es";if(!["es","pt"].includes(e))return alert(`[TechSupport] Unsupported lang: ${e}`);const u=t.filter(a=>a.lang===e),i=b(e),c=h(r,e),n=this.attachShadow({mode:"open"}),l=u.reduce((a,d)=>{const q=c({...d.headers,body:d.body});return`${a}
           <li>
             <a href="${q}" target="_blank">
-              ${m.headers.name}
+              ${d.headers.name}
             </a>
           </li>
-        `},"");a.innerHTML=`
+        `},"");n.innerHTML=`
       <style>
       a {
         text-decoration: none;
         font-family: Open Sans, sans-serif;
       }
       .menu {
-        background-color: rgba(0, 0, 0, 0.7);
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: #f2f2f2;
+        border-radius: 0.4rem;
         display: none;
         position: absolute;
-        width: 100%;
-        height: 100vh;
-        left: 0;
-        top: -5px;
-        margin: 0;
-        padding: 0;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        list-style: none;
+        right: 23px;
+        top: 60px;
         z-index: 999;
-      }
-      .menu ul {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        list-style: none;
       }
       .menu li {
         margin: 0;
-        padding: 0;
+        padding: 0.5rem 1.65rem;
+      }
+      .menu li:first-child {
+        border-radius: 0.25rem 0.25rem 0 0;
+      }
+      .menu li:last-child {
+        border-radius: 0 0 0.25rem 0.25rem;
+      }
+      .menu li:hover {
+        background-color: #FB5EBF;
       }
       .menu a {
         display: block;
-        margin: 0.3rem;
+        margin: 0;
         padding: 0.6rem 1.2rem;
-        color: #fff;
+        color: #000;
+        font-weight: 600;
       }
       .menu ul a {
         background-color: #000;
-        border-radius: 0.4rem;
       }
       </style>
-      <a class="open-btn" href="#" title="${t("techSupport")}">\u{1F6DF}</a>
-      <div class="menu">
-        <ul>
-          ${l}
-        </ul>
-        <a class="close-btn" href="#">\u2716\uFE0F ${t("close")}</a>
-      </div>
-    `;const d=a.querySelector(".open-btn"),u=a.querySelector(".close-btn"),s=a.querySelector(".menu");d.addEventListener("click",o=>{o.preventDefault(),s.style.display=s.style.display==="flex"?"none":"flex"}),u.addEventListener("click",o=>{o.preventDefault(),s.style.display="none"})}}customElements.define("x-tech-support",h)});
+      <a class="open-btn" href="#" title="${i("techSupport")}">
+        <svg
+          width="32"
+          height="32"
+          focusable="false"
+          aria-hidden="true"
+          viewBox="0 0 24 24"
+        >
+            <path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z">
+            </path>
+        </svg>
+      </a>
+      <ul class="menu">
+        ${l}
+      </ul>
+    `;const p=n.querySelector(".open-btn"),s=n.querySelector(".menu");p.addEventListener("click",a=>{a.preventDefault(),s.style.display=s.style.display==="block"?"none":"block"})}}customElements.define("x-tech-support",v)});
